@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>My Pixel Kafe</title>
+  <link rel="icon" sizes="32x32" href="assets/My-Pixel-Kafe.png">
+
+  <!Fonts>
+  <link href="https://fonts.googleapis.com/css2?family=Marhey:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!CSS>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!LOADING SCREEN>
+  <div id="loader">
+    <div class="loader-content">
+      <div class="loader-img-box">
+        <img src="assets/Small-My-Pixel-Kafe-Logo.svg" alt="My Pixel Kafe Logo">
+      </div>
+
+      <p>Brewing your experience...</p>
+    </div>
+  </div>
+
+  <!NAVBAR>
+  <header class="nav">
+    <div class="logo">
+      <img src="assets/Small-My-Pixel-Kafe-Logo.svg" alt="My Pixel Kafe Logo">
+    </div>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#game-info">Game Info</a>
+      <a href="#contact">Creators</a>
+    </nav>
+
+    <div class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </header>
+
+  <!HOME SECTION>
+  <section id="home" class="home reveal">
+    <video class="bg-video" autoplay muted loop playsinline>
+      <source src="assets/Homepage.mp4" type="video/mp4">
+    </video>
+
+    <div class="home-content">
+      <h1>
+        <span>My</span><br>
+        <span>Pixel Kafe</span>
+      </h1>
+
+      <p>
+        Step into the world of My Pixel Kafe!<br>
+        Serve customers, craft perfect drinks,<br>
+        and become the ultimate barista.
+      </p>
+
+      <div class="btn-group">
+        <a href="#about" class="btn btn-light">Learn more</a>
+        <a href="#game-info" class="btn btn-yellow">Play now!</a>
+      </div>
+    </div>
+  </section>
+
+  <!ABOUT SECTION>
+  <section id="about" class="about reveal">
+    <div class="about-panel">
+      <img src="assets/About.svg" alt="About My Pixel Kafe Panel">
+
+      <div class="about-text">
+        <h2>What is</h2>
+        <span>My Pixel Kafe?</span>
+        <div class="underline"></div>
+
+        <p>
+          My Pixel Kafe is a simulation game where the player takes the role of a barista,
+          preparing coffee orders for customers while maintaining a high reputation score.
+        </p>
+      </div>
+
+      <div class="about-character">
+        <video src="assets/About-Character.mp4" muted loop></video>
+      </div>
+    </div>
+  </section>
+
+  <!SHARED WOOD BACKGROUND SECTION>
+  <section class="game-section">
+
+    <!GAME INFO SECTION>
+    <section id="game-info" class="game-info reveal">
+      <div class="title-row">
+        <h2>How to Play</h2>
+      </div>
+
+      <p class="subtitle">
+        Enjoy the grind and brew your way to the top in Pixel Cafe!
+      </p>
+
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-text">
+            <div class="circle">1</div>
+            <h3>Take The Order</h3>
+            <p>
+              Watch for customer bubbles and note their requests.
+              Be quick—happy customers leave the best tips!
+            </p>
+          </div>
+
+          <div class="step-video">
+            <video src="assets/DCAA Trailer V2.mp4" muted loop></video>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-text">
+            <div class="circle">2</div>
+            <h3>Brew the Blend</h3>
+            <p>
+              Tap the correct recipe to create the correct drink.
+              Precision is key to making the perfect cup.
+            </p>
+          </div>
+
+          <div class="step-video">
+            <video src="assets/DCAA Trailer V2.mp4" muted loop></video>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-text">
+            <div class="circle">3</div>
+            <h3>Collect Rewards</h3>
+            <p>
+              Earn coins and build your reputation with every successful serve.
+              Use your riches to expand the shop!
+            </p>
+          </div>
+
+          <div class="step-video">
+            <video src="assets/DCAA Trailer V2.mp4" muted loop></video>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="step-text">
+            <div class="circle">4</div>
+            <h3>Level Up Menu</h3>
+            <p>
+              Meet your daily requirements to unlock premium drink recipes
+              and become a master of the menu.
+            </p>
+          </div>
+
+          <div class="step-video">
+            <video src="assets/DCAA Trailer V2.mp4" muted loop></video>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!CREATORS SECTION>
+    <section id="contact" class="contact reveal">
+      <div class="title-row">
+        <h2>Creators</h2>
+      </div>
+
+      <div class="creator-grid">
+
+        <a href="#" target="_blank" class="creator-card">
+          <img src="assets/john-wee.svg" alt="Johnwee De Vera Avatar">
+          <h4>Johnwee De Vera</h4>
+          <span>View Profile</span>
+        </a>
+
+        <a href="portfolio/sherry/index-sherry.html" target="_blank" class="creator-card">
+          <img src="assets/sherry-ann.svg" alt="Sherry Ann Narvarte Avatar">
+          <h4>Sherry Ann Narvarte</h4>
+          <span>View Profile</span>
+        </a>
+
+        <a href="portfolio/lex-lawrenz/index-lex.html" target="_blank" class="creator-card">
+          <img src="assets/lex-lawrenz.svg" alt="Lex Lawrenz J. Aquino Avatar">
+          <h4>Lex Lawrenz J. Aquino</h4>
+          <span>View Profile</span>
+        </a>
+
+        <a href="#" target="_blank" class="creator-card">
+          <img src="assets/kenth.svg" alt="Kenth Cyrus Calimlim Avatar">
+          <h4>Kenth Cyrus Calimlim</h4>
+          <span>View Profile</span>
+        </a>
+
+        <a href="#" target="_blank" class="creator-card">
+          <img src="assets/leiane.svg" alt="Leiane Peralta Avatar">
+          <h4>Leiane Peralta</h4>
+          <span>View Profile</span>
+        </a>
+
+      </div>
+    </section>
+
+    <!FOOTER>
+    <footer>
+      <p>
+        My Pixel Kafe<br>
+        Web Technology and Development 1 | School Year 2025–2026 | 12-ITEN-01<br>
+        © 2026 My Pixel Kafe. All rights reserved.
+      </p>
+    </footer>
+
+  </section>
+
+  <!JavaScript>
+  <script src="script.js"></script>
+
+</body>
+</html>
