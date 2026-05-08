@@ -181,7 +181,7 @@ section {
 
 .btn:hover {
   transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 /*ABOUT*/
@@ -368,6 +368,7 @@ section {
   text-align: left;
   gap: 10px;
   max-width: 400px;
+  padding-right: 40px;
 
   color: #f5eee8;
 }
@@ -407,7 +408,7 @@ section {
   z-index: 2;
 
   width: 350px;
-  aspect-ratio: 4 / 3; /* keeps exact ratio */
+  aspect-ratio: 16 / 9; /* keeps exact ratio */
 
   overflow: hidden;
   border-radius: 12px;
@@ -427,10 +428,9 @@ section {
 /*CREATORS / CREDITS*/
 .contact {
   padding-top: 120px;
-  padding-bottom: 60px;
+  padding-bottom: 0;
   text-align: center;
-
-  background: none; /* IMPORTANT */
+  background: none;
 }
 
 .creator-grid {
@@ -438,14 +438,17 @@ section {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: stretch;
   gap: 32px;
-  max-width: 950px;
+
+  max-width: 850px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .creator-card {
   width: 220px;
+  flex: 0 0 220px;
   background: #f5eee8;
   padding: 14px;
   border-radius: 14px;
@@ -478,7 +481,7 @@ section {
 
 .creator-card h4 {
   margin-top: 12px;
-  font-size: 15px;
+  font-size: 14px;
   font-weight: 700;
   color: #6b4b3e;
 }
@@ -494,15 +497,19 @@ section {
 /*FOOTER*/
 footer {
   text-align: center;
-  padding: 25px 20px 35px;
+  padding: 70px 20px 20px;
   color: #f5eee8;
   font-size: 11px;
 
-  background: linear-gradient(
-    to bottom,
-    rgba(0,0,0,0),
-    rgba(43, 26, 18, 0.5)
-  );
+  background:
+    linear-gradient(
+      to bottom,
+      rgba(0,0,0,0) 0%,
+      rgba(43, 26, 18, 0.75) 35%,
+      #2b1a12 100%
+    );
+
+  margin-top: -1px;
 }
 
 /*ANIMATIONS*/
@@ -516,24 +523,6 @@ footer {
 .reveal.active {
   opacity: 1;
   transform: translateY(0);
-}
-
-/* smoother hover feel */
-.btn,
-.step,
-.creator-card {
-  transition: 0.3s ease;
-}
-
-.step:hover,
-.creator-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 18px 35px rgba(0,0,0,0.25);
-}
-
-.btn:hover {
-  transform: translateY(-3px) scale(1.05);
-  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
 }
 
 /* ================= FINAL MOBILE FIX (HOME + HOW TO PLAY) ================= */
@@ -713,8 +702,8 @@ footer {
 
 /*FIX STEP VIDEO RATIO*/
 .step-video {
-  width: 350px;
-  aspect-ratio: 7 / 5; /* same as 350x250 */
+  width: 600px;
+  aspect-ratio: 16 / 9; /* same as 350x250 */
   height: auto;
 }
 
@@ -729,7 +718,7 @@ footer {
   .step-video {
     width: 100%;
     max-width: 350px;
-    aspect-ratio: 7 / 5;
+    aspect-ratio: 16 / 9;
     height: auto;
   }
 }
@@ -739,12 +728,12 @@ footer {
   .step-video {
     width: 100%;
     max-width: 350px;
-    aspect-ratio: 7 / 5;
+    aspect-ratio: 16 / 9;
     height: auto;
   }
 }
 
-/* ================= FIX BACKGROUND ON MOBILE ================= */
+/*FIX BACKGROUND ON MOBILE*/
 @media (max-width: 768px) {
 
   .about,
@@ -766,7 +755,7 @@ footer {
   }
 }
 
-/* ================= MOBILE SIDE SPACING FIX ================= */
+/*MOBILE SIDE SPACING FIX*/
 @media (max-width: 768px) {
 
   /* GLOBAL SECTION PADDING */
@@ -794,7 +783,7 @@ footer {
   }
 }
 
-/* ================= BURGER MENU ================= */
+/*BURGER MENU*/
 .menu-toggle {
   display: none;
   flex-direction: column;
@@ -810,7 +799,7 @@ footer {
   transition: 0.3s;
 }
 
-/* ================= MOBILE NAV ================= */
+/*MOBILE*/
 @media (max-width: 768px) {
   .nav {
     height: 56px;
@@ -819,8 +808,8 @@ footer {
   }
 
   .logo img {
-    height: 44px;
-    top: 10;
+  height: 44px;
+  top: 10px;
   }
 
   .menu-toggle {
@@ -863,22 +852,19 @@ footer {
 
   .nav-links a {
     margin-left: 0;
-    width: 100%;           /* 🔥 take full width */
-    text-align: center;    /* 🔥 center text properly */
+    width: 100%;
+    text-align: center;
     padding: 8px 0;
     font-size: 16px;
     font-weight: 600;
   }
-}
 
-/* ================= MOBILE HERO REDESIGN V2 ================= */
-@media (max-width: 768px) {
   .home {
     min-height: 100vh;
     padding: 90px 22px 45px;
 
     display: flex;
-    align-items: center; /* 🔥 THIS centers vertically */
+    align-items: center;
     justify-content: center;
 
     text-align: center;
@@ -930,7 +916,7 @@ footer {
   }
 
   .home h1 span:last-child {
-    margin-left: 0px; /* 🔥 shift "Pixel Kafe" to the right */
+    margin-left: 0px;
   }
 
   .home p {
@@ -958,6 +944,30 @@ footer {
   .bg-video {
     object-position: -850px top; /* default safe */
   }
+  
+  .contact {
+    padding-bottom: 0;
+  }
+  
+  .creator-grid {
+    max-width: 220px;
+    gap: 18px;
+    align-items: center;
+  }
+  
+  .creator-card {
+    width: 220px;
+  }
+
+  footer {
+    margin-top: 35px;
+    padding: 90px 20px 16px;
+  }
+
+  footer p {
+    font-size: 7px;
+    max-width: 260px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -982,4 +992,33 @@ footer {
     padding: 9px 18px;
     font-size: 10px;
   }
+}
+
+/*FOOTER FULL WIDTH FIX*/
+.contact {
+  padding-bottom: 0;
+}
+
+footer {
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  margin-top: 40px;
+
+  padding: 80px 20px 18px;
+  text-align: center;
+
+  background: linear-gradient(
+    to bottom,
+    rgba(0,0,0,0) 0%,
+    rgba(43, 26, 18, 0.35) 45%,
+    #2b1a12 100%
+  );
+}
+
+footer p {
+  margin: 0 auto;
+  max-width: 330px;
+  font-size: 9px;
+  line-height: 1.4;
 }
