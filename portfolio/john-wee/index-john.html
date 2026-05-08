@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- ============================================
+       META & FONTS
+       ============================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>John Wee A. De Vera — Portfolio</title>
+  <meta name="description" content="Personal portfolio of John Wee A. De Vera." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;700;800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles-john.css">
+</head>
+<body>
+
+  <!-- ============================================
+       NAVIGATION
+       ============================================ -->
+  <nav id="nav">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">John Wee A<span>.</span> DE VERA</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#interests">Interests</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button>
+    </div>
+  </nav>
+
+  <!-- ============================================
+       HERO
+       ============================================ -->
+  <section id="home" class="hero">
+    <div class="container hero-stack">
+      <div class="hero-visual reveal">
+        <div class="hero-photo">
+          <img src="profile-john.jpg" alt="John Wee A. De Vera" />
+        </div>
+      </div>
+      <div class="reveal-stagger hero-text">
+        <div class="hero-meta"><span class="pulse"></span> Available for new opportunities</div>
+        <h1>Hi, I'm <span class="accent">John Wee A. De Vera</span></h1>
+        <p class="tagline">I design and build digital experiences that are fast, beautiful, and built to last.</p>
+        <div class="cta-row">
+          <a href="#contact" class="btn btn-primary">Contact →</a>
+          <a href="#about" class="btn btn-ghost">About Me</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       ABOUT
+       ============================================ -->
+  <section id="about">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:48px">
+        <div class="eyebrow">01 — About</div>
+        <h2 class="section-title">A bit about me.</h2>
+      </div>
+      <div class="about-text reveal">
+        <p>Hi, I'm <strong>John Wee A. De Vera</strong>, a Universidad de Dagupan student.</p>
+        <p>I enjoy spending my free time playing guitar and listening to music. I'm a big fan of K-pop, especially ILLIT, and I love discovering new songs and vibes. When I'm not into music, you probably find me playing games and just relaxing.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       SKILLS  (now with logos!)
+       ============================================ -->
+  <section id="skills">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:48px">
+        <div class="eyebrow">02 — Toolkit</div>
+        <h2 class="section-title">Skills.</h2>
+      </div>
+      <div class="skills-grid reveal-stagger">
+
+        <!-- Code skills -->
+        <div class="skill-group">
+          <h4>Code</h4>
+          <div class="skill-boxes">
+            <div class="skill-box">
+              <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5 logo" />
+              <span>HTML</span>
+            </div>
+            <div class="skill-box">
+              <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3 logo" />
+              <span>CSS</span>
+            </div>
+            <div class="skill-box">
+              <img class="skill-logo" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" />
+              <span>Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Creative skills -->
+        <div class="skill-group">
+          <h4>Creative</h4>
+          <div class="skill-boxes">
+            <div class="skill-box">
+              <span class="skill-logo skill-emoji">🎸</span>
+              <span>Guitar</span>
+            </div>
+            <div class="skill-box">
+              <span class="skill-logo skill-emoji">🎤</span>
+              <span>Singing</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       INTERESTS
+       ============================================ -->
+  <section id="interests">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:48px">
+        <div class="eyebrow">03 — Off the clock</div>
+        <h2 class="section-title">Things I love.</h2>
+      </div>
+      <div class="interests-grid reveal-stagger">
+        <div class="interest"><div class="interest-icon">🎸</div><h4>Guitar</h4><p>Strumming chords in my free time.</p></div>
+        <div class="interest"><div class="interest-icon">🎤</div><h4>Singing</h4><p>Belting out my favorite tracks.</p></div>
+        <div class="interest"><div class="interest-icon">🎧</div><h4>K-pop</h4><p>Big ILLIT fan — always finding new vibes.</p></div>
+        <div class="interest"><div class="interest-icon">🎮</div><h4>Gaming</h4><p>Unwinding with a good game session.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       CONTACT
+       ============================================ -->
+  <section id="contact">
+    <div class="container">
+      <div class="reveal" style="margin-bottom:48px">
+        <div class="eyebrow">04 — Contact</div>
+        <h2 class="section-title">Let's connect.</h2>
+        <p class="section-sub">Feel free to reach out — I'd love to chat about music, code, or anything in between.</p>
+      </div>
+      <div class="socials reveal-stagger">
+        <a href="tel:+1234567890" class="social">
+          <span class="social-icon">📞</span>
+          <div class="social-meta"><b>Phone</b><span>(+63) 920-4956-099</span></div>
+        </a>
+        <a href="https://www.facebook.com/johnwee.devera.35" target="_blank" rel="noopener" class="social">
+          <span class="social-icon">f</span>
+          <div class="social-meta"><b>Facebook</b><span>johnweedevera/facebook.com</span></div>
+        </a>
+        <a href="https://www.instagram.com/fanmexn/?hl=en" target="_blank" rel="noopener" class="social">
+          <span class="social-icon">IG</span>
+          <div class="social-meta"><b>Instagram</b><span>@fanmexn</span></div>
+        </a>
+        <a href="https://discord.com/" target="_blank" rel="noopener" class="social">
+          <span class="social-icon">DC</span>
+          <div class="social-meta"><b>Discord</b><span>Fanmeen</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================
+       FOOTER
+       ============================================ -->
+  <footer>
+    <div class="container">
+      Designed &amp; built by <span>John Wee A. De Vera</span> · © <span id="year"></span>
+    </div>
+  </footer>
+
+  <script src="script-john.js"></script>
+</body>
+</html>
